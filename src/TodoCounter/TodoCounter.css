@@ -1,0 +1,24 @@
+
+h2{
+    font-size: 1.6rem;
+    background: rgba( 255, 255, 255, 0.60 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    color: var(--pink);
+    text-shadow: 1px 3px 2px var(--pink-dimmed);
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    animation: color-blink2 10s infinite ease-out;
+}
+
+@keyframes color-blink2 {
+    0% {color: var(--pink);}
+    30% {color: var(--purple);}
+    70% {color: var(--red);}
+    100% {color: var(--pink);}
+}

@@ -1,0 +1,91 @@
+.modalForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  --red: rgba(201, 47, 60, 1);
+  --purple: rgba(110, 61, 235, 1);
+  --white: rgba(221, 243, 255, 1);
+  --white-dimmed: rgba(221, 243, 255, 0.6);
+  --pink: rgba(235, 117, 182, 1);
+  --pink-dimmed: rgba(235, 117, 182, 0.6);
+
+  text-align: center;
+  padding: 5px;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  outline:none;
+}
+
+.modalTextArea{
+  text-align: center;
+  padding: 5px;
+  font-size: 1.6rem;
+  background: rgba( 255, 255, 255, 0.60 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 7px solid rgba( 255, 255, 255, 0.0);
+  text-align: center;
+  color: var(--white);
+  font-weight: 400;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  outline:none;
+  text-transform: capitalize;
+  width: calc(200px + 20vw);
+  resize: none;
+}
+.modalTextArea:focus, .modalTextArea:hover, .modalTextArea:active{
+  border: 7px solid rgba( 255, 255, 255, 0.4 );
+  animation: border-color-blink 10s infinite ease-out;
+  transform: scale(100.5%);
+
+}
+
+.buttonContainer--modal{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1.3rem;
+}
+
+.buttonContainer--modal > button{
+  width: 7rem;
+  outline:none;
+
+}
+
+.buttonContainer--modal > button:hover{
+  transform: scale(103%);
+}
+
+.buttonContainer--modal > .cancelTodo:hover{
+  background: var(--red);
+}
+
+.buttonContainer--modal > .addTodo:hover{
+  animation: bg-color-blink 1s infinite ease-in;
+}
+
+.modalIcon{
+  color: var(--white);
+  font-size: 2rem;
+}
+
+
+
+@keyframes outline-color-blink {
+  15% {outline-color: var(--pink);}
+  30% {outline-color: var(--purple);}
+  45% {outline-color: var(--red);}
+  60% {outline-color: var(--purple);}
+  75% {outline-color: var(--pink);}
+}
+
+@keyframes bg-color-blink {
+  0% {background-color: var(--pink);}
+  50% {background-color: var(--purple);}
+  100% {background-color: var(--pink);}
+}

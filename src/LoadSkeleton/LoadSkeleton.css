@@ -1,0 +1,17 @@
+.loadSkeletonContainer{
+  margin-top: 2rem;
+}
+
+.loadSkeletonItem{
+  height: 30px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background: rgba( 255, 255, 255, 0.4 );
+  animation: bg-load 1s infinite ease-in-out;
+}
+
+@keyframes bg-load {
+  0% {background-color:  rgba( 255, 255, 255, 0.2 ); transform: scale(100%);}
+  50% {background-color:  rgba( 255, 255, 255, 0.3 ); transform: scale(100.5%);}
+  100% {background-color:  rgba( 255, 255, 255, 0.2 ); transform: scale(100%);}
+}

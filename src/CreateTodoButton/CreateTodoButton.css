@@ -1,0 +1,34 @@
+.buttonContainer{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+button{
+    font-size: 20px;
+    
+    font-size: 1.6rem;
+    background: rgba( 255, 255, 255, 0.60 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 20px;
+    border: 5px solid rgba( 255, 255, 255, 0.0);
+    padding: 1rem 1.2rem;
+    text-align: center;
+    color: rgb(169, 190, 218);
+    font-weight: 400;
+    width: 50%;
+}
+.buttonContainer i{
+    animation: color-blink 10s infinite;
+}
+
+button:hover, button:active, button:focus{
+    transform: scale(102%);
+    animation: border-color-blink 6s infinite;
+}
+

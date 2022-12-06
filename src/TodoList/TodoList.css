@@ -1,0 +1,12 @@
+section{
+    width: 100%;
+    margin: 0 auto;
+}
+
+ul{
+    padding: 0 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

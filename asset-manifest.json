@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/TodoAPP/static/css/main.92ef5f08.css",
+    "main.js": "/TodoAPP/static/js/main.b8b24423.js",
+    "static/media/bg.png": "/TodoAPP/static/media/bg.6fa321718ba97642e063.png",
+    "index.html": "/TodoAPP/index.html",
+    "main.92ef5f08.css.map": "/TodoAPP/static/css/main.92ef5f08.css.map",
+    "main.b8b24423.js.map": "/TodoAPP/static/js/main.b8b24423.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92ef5f08.css",
+    "static/js/main.b8b24423.js"
+  ]
+}
